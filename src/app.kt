@@ -12,7 +12,24 @@ fun main() {
     brixton.display()
 
     brixton.displayWithLambda(::printName)
+
+    val question = Question()
+    question.Answer = "happiness"
+    question.display()
+    println("hey ${question.Answer}")
+    printName("The answer to the question, ${question.Question}, is ${question.Answer}.")
+
 }
 fun printName(name: String){
     println(name)
+
+}
+
+class Question {
+    var Answer:String = ""
+    val Question:String = "What is the meaning of life?"
+    fun display() {
+        println("You said $Answer")
+    }
+
 }
