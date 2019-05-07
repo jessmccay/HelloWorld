@@ -1,5 +1,5 @@
 package com.rsk
 
-class Person {
-    var name: String = ""
+class Person (var name: String){
+
 }
